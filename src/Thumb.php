@@ -29,10 +29,6 @@ class Thumb
     }
 
     /**
-     * @param string $image
-     * @param int $width
-     * @param int|null $height
-     * @param int|null $zc
      * @return string
      */
     public function make($image, $width, $height = null, $zc = null, $imageName = null)
