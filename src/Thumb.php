@@ -37,9 +37,9 @@ class Thumb
      */
     public function make($image, $width, $height = null, $zc = null, $imageName = null)
     {
-        $sz = $width ? "?w={$width}" : null;
-        $sz .= empty($sz) && $height ? "?h={$width}" : !empty($sz) && $height ? "&h={$height}" : null;
-        $sz .= !empty($zc) ? "&zc={$zc}" : null;
+        $sz = ($width ? "?w={$width}" : null);
+        $sz .= (empty($sz) && !empty($height) ? "?h={$width}" : (!empty($sz) && !empty($height) ? "&h={$height}" : null));
+        $sz .= (!empty($zc) ? "&zc={$zc}" : null);
 
         if (file_exists("{$this->uploads}/{$image}") && is_file("{$this->uploads}/{$image}")) {
             return $this->cropper->imgCreate("{$this->uploads}/{$image}{$sz}", $imageName);

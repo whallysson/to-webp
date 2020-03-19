@@ -44,7 +44,7 @@ if (!class_exists('whallysson\Thumb')) {
 function image($image, $width, $height = null, $zc = null, $imageName = null)
 {
     if ($image) {
-        $newimage = (new Thumb())->make($image, $width, $height, $zc, $imageName);
+        $newimage = (new \whallysson\Thumb())->make($image, $width, $height, $zc, $imageName);
 
         /** WEBP */
         $newName = ($imageName ? $imageName : pathinfo(filter_var(mb_strtolower($newimage),
@@ -54,7 +54,7 @@ function image($image, $width, $height = null, $zc = null, $imageName = null)
         $webp = new \CodeBlog\ToWebP\ToWebP(CONF_UPLOAD_DIR, CONF_UPLOAD_IMAGE_DIR . "/cache");
         $webp->convert($newimage, $destination);
 
-        return BASE . "/" . (!empty($webp->image_webp) ? $webp->image_webp : $webp->image_original);
+        return (!empty($webp->image_webp) ? $webp->image_webp : $webp->image_original);
     }
 
     return null;
