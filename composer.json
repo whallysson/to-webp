@@ -1,0 +1,28 @@
+{
+    "name": "whallysson/to-webp",
+    "description": "Easy WebP conversion!",
+    "keywords": [
+        "php webp",
+        "webp", "images", "cwebp", "imagick", "gd", "jpg2webp", "png2webp", "jpg", "png", "image conversion"
+    ],
+    "homepage": "http://www.codeblog.com.br",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Whallysson Avelino",
+            "email": "whallyssonallain@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-gd": "*",
+        "codeblog/conveter-php-webp": "^1.0",
+        "codeblog/thumbcropper": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "whallysson\\": "src"
+        }
+    }
+}
