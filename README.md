@@ -1,7 +1,7 @@
 # to-webp
 
 [![Maintainer](http://img.shields.io/badge/maintainer-@whallysson-blue.svg?style=flat-square)](https://twitter.com/whallysson)
-[![Source Code](http://img.shields.io/badge/source-codeblog/conveterphpwebp-blue.svg?style=flat-square)](https://github.com/whallysson/to-webp)
+[![Source Code](http://img.shields.io/badge/source-codeblog/towebp-blue.svg?style=flat-square)](https://github.com/whallysson/to-webp)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/codeblog/to-webp.svg?style=flat-square)](https://packagist.org/packages/codeblog/to-webp)
 [![Latest Version](https://img.shields.io/github/release/whallysson/to-webp.svg?style=flat-square)](https://github.com/whallysson/to-webp/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
